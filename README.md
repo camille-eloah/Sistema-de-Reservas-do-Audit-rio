@@ -2,7 +2,7 @@
 Sistema para reservar horários em um auditório.
 
 
-## Requisitos
+## Requisitos da atividade
 O sistema cumpre todos os requisitos exigidos para a conclusão da atividade de POO.
 * Estrutura do programa no formato Orientado a Objetos (classe App e execução do código a partir de objeto instanciado, uso de métodos como funcionalidades do sistema); ✅
 
@@ -30,3 +30,11 @@ O sistema cumpre todos os requisitos exigidos para a conclusão da atividade de 
 
 * Realizar tratamento de exceções nos trechos de código que podem dar erro se não tratados. ✅
 
+## Bibliotecas 
+* tkinter
+* tkcalendar
+* time
+* random
+* threading
+* pickle
+* sqlite3
