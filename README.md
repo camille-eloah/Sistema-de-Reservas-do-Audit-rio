@@ -1,5 +1,6 @@
 # Sistema-de-Reservas-do-Auditorio
 Sistema para reservar horários em um auditório.
+
 O usuário é capaz de reservar, exibir, deletar e fazer backup das reservas. Cada reserva é guardada por uma data, que deve ser selecionada através do tkcalendar. As datas funcionam como chaves para acessar as reservas de seu dia específico.
 
 
