@@ -1,6 +1,8 @@
 # Sistema-de-Reservas-do-Auditorio
 Sistema para reservar horários em um auditório.
 
+
+## Requisitos
 • Estrutura do programa no formato Orientado a Objetos (classe App e execução do código a partir de objeto instanciado, uso de métodos como funcionalidades do sistema); ✅
 
 • Interface gráfica desenvolvida com TKInter; ✅
