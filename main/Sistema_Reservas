@@ -86,9 +86,10 @@ class App:
         # Título "Sistema de Reservas de Auditório" no Frame navbar
         self.label_titulo = Label(self.navbar, text="Sistema de Reservas de Auditório", font=("Helvetica", 16, "bold"), bg="#0d1b2a", fg="white")
         self.label_titulo.pack(pady=12) 
-        
+
+        # Título "Reservas do dia"
         self.label_exibicao = Label(self.area_exibicao, text="Reservas do dia", font=("Helvetica", 12, "bold"), bg="#0d1b2a", fg="white")
-        self.label_exibicao.place(x=10, y=10)  # pady adiciona um espaçamento na vertical
+        self.label_exibicao.place(x=10, y=10)
         
         # Widget de texto para exibir as reservas
         self.texto_exibicao = Text(self.area_exibicao, wrap="word", height=8, width=70)
