@@ -284,13 +284,9 @@ class App:
 
     def atualizar_frases(self):
         while True:
-            # Obter uma nova frase motivacional aleatória
+            # Atualiza as frases aleatoriamente
             nova_frase = random.choice(self.frases_motivacionais)
-
-            # Atualizar a label com a nova frase
             self.label_frase_motivar.config(text=nova_frase)
-
-            # Aguardar 5 segundos antes da próxima atualização
             time.sleep(5)
 
 
