@@ -147,7 +147,7 @@ class App:
         # Dicionário para armazenar as reservas. As chaves são as datas.
         self.reservas_por_dia = {}
         
-        self.carregar_dados_do_banco()
+        self.carregar_database()
         print(self.reservas_por_dia)
 
         self.root.mainloop()
@@ -160,7 +160,7 @@ class App:
         # Retorna uma lista de horários
         return [f"{hora:02d}:00" for hora in range(7, 22)]
 
-    def carregar_dados_do_banco(self):
+    def carregar_database(self):
         self.cursor.execute('''
             SELECT data, horario_inicio, horario_fim, responsavel
             FROM reservas
