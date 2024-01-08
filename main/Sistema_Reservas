@@ -192,7 +192,7 @@ class App:
         nome_reserva = self.entry_nome.get()
 
         try:
-            if self.horario_ja_reservado(data_selecionada, horario_inicio, horario_fim):
+            if self.verificar_reservado(data_selecionada, horario_inicio, horario_fim):
                 raise ValueError("Este período de horário já foi reservado para este dia.")
         except ValueError as error:
             messagebox.showerror("Erro de Reserva", str(error))
@@ -213,7 +213,7 @@ class App:
         messagebox.showinfo("Concluído", "A reserva foi feita com sucesso!")
 
         
-    def horario_ja_reservado(self, data, novo_inicio, novo_fim):
+    def verificar_reservado(self, data, novo_inicio, novo_fim):
         # Verifica se o novo horário já foi reservado
         try:
             if data in self.reservas_por_dia:
